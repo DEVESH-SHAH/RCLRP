@@ -32,7 +32,7 @@ const MarketingDashboard = () => {
   
   const toast = useToast();
 
-  console.log('🔥 MarketingDashboard component rendered');
+  
 
   // Form validation for campaigns
   const campaignValidationRules = {

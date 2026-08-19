@@ -46,7 +46,7 @@ const AdminDashboard = () => {
   
   const toast = useToast();
 
-  console.log('🔥 AdminDashboard component rendered');
+  
 
   // Form validation for different entity types
   const getValidationRules = (type) => {
@@ -94,9 +94,9 @@ const AdminDashboard = () => {
     if (activeTab === 'stores') loadStores();
   }, [activeTab]);
 
-  // Debug modal state changes
+  // Modal state effect (no debug logging)
   useEffect(() => {
-    console.log('🔥 Modal state changed:', { showModal, modalType, formData });
+    // intentionally left blank for side-effects in future
   }, [showModal, modalType, formData]);
 
   const loadOverview = async () => {

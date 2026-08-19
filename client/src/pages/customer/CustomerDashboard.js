@@ -122,15 +122,11 @@ const CustomerDashboard = () => {
       const qrToken = generateMockQRToken(customer.id);
       const expiryTime = new Date(Date.now() + 60000); // 60 seconds from now
       
-      // Debug: Log what's being generated
-      console.log('🔥 Generated QR Token:', qrToken);
-      
-      // Decode to show the actual content
+      // Validate token structure (no debug logs)
       try {
-        const decodedToken = JSON.parse(atob(qrToken));
-        console.log('🔥 Decoded QR Content:', decodedToken);
+        JSON.parse(atob(qrToken));
       } catch (e) {
-        console.error('🚨 Failed to decode QR token:', e);
+        console.error('Failed to decode QR token:', e);
       }
       
       setQrData(qrToken);
