@@ -381,3 +381,5 @@ ENVIRONMENT=production
 **🎉 The system is designed to work out-of-the-box with test data - no database setup required for demo purposes!**
 
 - History commit 10: minor doc tweak
+
+- History commit 11: minor doc tweak
